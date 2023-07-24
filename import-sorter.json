@@ -11,11 +11,11 @@
       "disableSort": true
     },
     {
-      "regex": "^[^.@]",
+      "regex": "^[^.~]",
       "orderLevel": 10
     },
     {
-      "regex": "^[@]",
+      "regex": "^[~]",
       "orderLevel": 15
     },
     {
