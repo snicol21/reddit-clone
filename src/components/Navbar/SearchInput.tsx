@@ -1,5 +1,5 @@
-import { SearchIcon } from '@chakra-ui/icons';
-import { Flex, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
+import { Flex, Icon, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
+import { BsSearch } from 'react-icons/bs';
 
 interface Props {
   // user;
@@ -10,7 +10,7 @@ const SearchInput = ({}: Props) => {
     <Flex flexGrow={1} marginRight={2} align='center'>
       <InputGroup>
         <InputLeftElement pointerEvents='none' height='full'>
-          <SearchIcon color='gray.400' />
+          <Icon as={BsSearch} color='gray.400' />
         </InputLeftElement>
         <Input
           placeholder='Search Reddit'
