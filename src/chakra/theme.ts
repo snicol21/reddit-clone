@@ -7,11 +7,11 @@ import '@fontsource/open-sans/700.css';
 export const theme = extendTheme({
   colors: {
     brand: {
-      100: '#ff3c00',
+      100: '#FF3C00',
     },
   },
   fonts: {
-    body: `'Open Sans', sans-serif`,
+    body: 'Open Sans, sans-serif',
   },
   styles: {
     global: () => ({

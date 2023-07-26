@@ -3,8 +3,8 @@ import { FormEvent, useState } from 'react';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { BsDot, BsReddit } from 'react-icons/bs';
 import { useSetRecoilState } from 'recoil';
-import { authModalState } from '~/atoms/authModalAtom';
-import { auth } from '~/firebase/clientApp';
+import { authModalState } from '../../../atoms/authModalAtom';
+import { auth } from '../../../firebase/clientApp';
 
 const ResetPassword = () => {
   const setAuthModalState = useSetRecoilState(authModalState);

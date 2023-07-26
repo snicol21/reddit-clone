@@ -11,8 +11,8 @@ import {
 import { useEffect } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useRecoilState } from 'recoil';
-import { authModalState } from '~/atoms/authModalAtom';
-import { auth } from '~/firebase/clientApp';
+import { authModalState } from '../../../atoms/authModalAtom';
+import { auth } from '../../../firebase/clientApp';
 import AuthInputs from './AuthInputs';
 import OAuthButtons from './OAuthButtons';
 import ResetPassword from './ResetPassword';

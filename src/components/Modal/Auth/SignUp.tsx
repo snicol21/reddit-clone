@@ -2,11 +2,11 @@ import { Button, Flex, Input, Text } from '@chakra-ui/react';
 import React, { ChangeEvent, FormEvent, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useSetRecoilState } from 'recoil';
-import { authModalState } from '~/atoms/authModalAtom';
-import { auth } from '~/firebase/clientApp';
-import { FIREBASE_ERRORS } from '~/firebase/errors';
+import { authModalState } from '../../../atoms/authModalAtom';
+import { auth } from '../../../firebase/clientApp';
+import { FIREBASE_ERRORS } from '../../../firebase/errors';
 
-interface Props {}
+type Props = {};
 
 const SignUp = ({}: Props) => {
   const setAuthModalState = useSetRecoilState(authModalState);

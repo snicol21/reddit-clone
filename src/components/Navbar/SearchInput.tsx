@@ -1,13 +1,14 @@
 import { Flex, Icon, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
+import { User } from 'firebase/auth';
 import { BsSearch } from 'react-icons/bs';
 
-interface Props {
-  // user;
-}
+type Props = {
+  user?: User | null;
+};
 
-const SearchInput = ({}: Props) => {
+const SearchInput = ({ user }: Props) => {
   return (
-    <Flex flexGrow={1} marginRight={2} align='center'>
+    <Flex flexGrow={1} maxWidth={user ? 'auto' : '600px'} marginRight={2} align='center'>
       <InputGroup>
         <InputLeftElement pointerEvents='none' height='full'>
           <Icon as={BsSearch} color='gray.400' />

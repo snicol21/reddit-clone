@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
 import Navbar from './Navbar/Navbar';
 
-interface Props {
+type Props = {
   children: ReactNode;
-}
+};
 
 const Layout = ({ children }: Props) => {
   return (
