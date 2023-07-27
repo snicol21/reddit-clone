@@ -3,7 +3,7 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { auth } from '../../../firebase/clientApp';
 
 const OAuthButtons = () => {
-  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, _, loading, error] = useSignInWithGoogle(auth);
 
   return (
     <Flex direction='column' width='full' marginBottom={4}>

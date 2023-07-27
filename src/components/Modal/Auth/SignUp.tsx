@@ -16,7 +16,7 @@ const SignUp = ({}: Props) => {
     confirmPassword: '',
   });
   const [error, setError] = useState('');
-  const [createUserWithEmailAndPassword, user, loading, userError] = useCreateUserWithEmailAndPassword(auth);
+  const [createUserWithEmailAndPassword, _, loading, userError] = useCreateUserWithEmailAndPassword(auth);
 
   // firebase logic
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
